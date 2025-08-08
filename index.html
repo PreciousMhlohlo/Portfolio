@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosibusiso Precious Mhlohlo | AI/ML Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Cutive Mono', monospace;
+        background-color: #F1EFEA;
+        color: #5A3734;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+
+        --star-color: rgba(90, 55, 52, 0.3);
+        
+        background-image: 
+          /* small stars */
+          radial-gradient(1px 1px at 20px 30px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 80px 60px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 40px 120px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 150px 90px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 220px 20px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 250px 180px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 120px 250px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 20px 280px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 270px 270px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 10px 180px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 170px 20px, var(--star-color), transparent),
+          radial-gradient(1px 1px at 90px 290px, var(--star-color), transparent),
+          
+          /* larger stars */
+          radial-gradient(1.5px 1.5px at 190px 140px, var(--star-color), transparent),
+          radial-gradient(1.5px 1.5px at 280px 70px, var(--star-color), transparent),
+          radial-gradient(1.5px 1.5px at 50px 50px, var(--star-color), transparent),
+          radial-gradient(1.5px 1.5px at 200px 240px, var(--star-color), transparent),
+          
+          /* extra large stars */
+          radial-gradient(2px 2px at 100px 200px, var(--star-color), transparent),
+          radial-gradient(2px 2px at 260px 10px, var(--star-color), transparent);
+        
+        background-size: 300px 300px;
+        background-repeat: repeat;
+
+        animation: move-stars 70s linear infinite;
+      }
+
+      @keyframes move-stars {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(-300px, -300px);
+        }
+      }
+
+      .font-display {
+        font-family: 'Chakra Petch', sans-serif;
+      }
+      .profile-picture {
+        background-image: url('https://media.licdn.com/dms/image/v2/D4D03AQH9nIEvC1BBTQ/profile-displayphoto-crop_800_800/B4DZhaqiSaHsAI-/0/1753867757545?e=1757548800&v=beta&t=9Ue2VfrorlEPAqJNDdr181Qnfy7lgBxdB15nEdut5JE');
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
